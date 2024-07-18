@@ -35,14 +35,28 @@
     <maxValue xsi:type="core:UndefinedValue"/>
     <fullTextSearch>Use</fullTextSearch>
   </resources>
-  <dimensions uuid="f59cf233-bd51-4214-bd80-9d343685407b">
-    <name>Аттракцион</name>
+  <dimensions uuid="9b2c705f-4bf2-4247-a2e2-eacc6ef0b2ba">
+    <name>Клиент</name>
     <synonym>
       <key>ru</key>
-      <value>Аттракцион</value>
+      <value>Клиент</value>
     </synonym>
     <type>
-      <types>CatalogRef.Аттракционы</types>
+      <types>CatalogRef.Клиенты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="f59cf233-bd51-4214-bd80-9d343685407b">
+    <name>ВидАттракциона</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид аттракциона</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ВидыАттракционов</types>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>

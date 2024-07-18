@@ -27,22 +27,45 @@
   <numberAllowedLength>Variable</numberAllowedLength>
   <checkUnique>true</checkUnique>
   <autonumbering>true</autonumbering>
+  <defaultObjectForm>Document.ПродажаБилетов.Form.ФормаДокумента</defaultObjectForm>
   <registerRecords>AccumulationRegister.АктивныеПосещения</registerRecords>
   <registerRecords>AccumulationRegister.Продажи</registerRecords>
+  <registerRecords>AccumulationRegister.БонусныеБаллыКлиентов</registerRecords>
   <postInPrivilegedMode>true</postInPrivilegedMode>
   <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
-  <attributes uuid="ea0aa009-3ae3-4753-94f0-cd840c700ebc">
-    <name>Аттракцион</name>
+  <attributes uuid="77fb78ca-75a4-4926-87ac-5e0b34d2ec7a">
+    <name>Номенклатура</name>
     <synonym>
       <key>ru</key>
-      <value>Аттракцион</value>
+      <value>Номенклатура</value>
     </synonym>
     <type>
-      <types>CatalogRef.Аттракционы</types>
+      <types>CatalogRef.Номенклатура</types>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
     <fillChecking>ShowError</fillChecking>
+    <choiceParameters>
+      <name>Отбор.ВидНоменклатуры</name>
+      <value xsi:type="core:ReferenceValue">
+        <value>Enum.ВидНоменклатуры.EnumValue.ПосещениеАттракциона</value>
+      </value>
+    </choiceParameters>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="165065ff-5416-43ec-8e67-7833e668947d">
+    <name>Клиент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Клиент</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Клиенты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
     <fillValue xsi:type="core:UndefinedValue"/>
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
@@ -68,6 +91,55 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
+  <attributes uuid="de0bbd9d-5124-4478-ab77-1194975c4c3b">
+    <name>БаллыКСписанию</name>
+    <synonym>
+      <key>ru</key>
+      <value>Баллы к списанию</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="ad68cd9b-cb70-4b3c-b096-e4333237eeab">
+    <name>Цена</name>
+    <synonym>
+      <key>ru</key>
+      <value>Цена</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="86646250-18b2-4ac3-9676-18824654fec4">
+    <name>ФормаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма документа</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
   <templates uuid="a33ea5e5-8c07-44ad-ac78-c4f812236486">
     <name>Билет</name>
   </templates>
