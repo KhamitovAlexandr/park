@@ -475,6 +475,10 @@
           <dataPath xsi:type="form:DataPath">
             <segments>БаллыКСписанию</segments>
           </dataPath>
+          <handlers>
+            <event>OnChange</event>
+            <name>БаллыКСписаниюПриИзменении</name>
+          </handlers>
           <extendedTooltip>
             <name>БаллыКСписаниюРасширеннаяПодсказка</name>
             <id>34</id>
@@ -1394,6 +1398,11 @@
     <use>
       <common>true</common>
     </use>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>ЗаписатьПродажу</name>
+      </handler>
+    </action>
     <currentRowUse>Auto</currentRowUse>
   </formCommands>
   <commandInterface>
