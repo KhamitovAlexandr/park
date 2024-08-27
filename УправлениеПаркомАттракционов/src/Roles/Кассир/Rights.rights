@@ -4,6 +4,13 @@
 	<setForAttributesByDefault>true</setForAttributesByDefault>
 	<independentRightsOfChildObjects>false</independentRightsOfChildObjects>
 	<object>
+		<name>AccumulationRegister.БонусныеБаллыКлиентов</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>Configuration.УправлениеПаркомАттракционов</name>
 		<right>
 			<name>ThinClient</name>
@@ -141,6 +148,13 @@
 		</right>
 		<right>
 			<name>InputByString</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>AccumulationRegister.Продажи</name>
+		<right>
+			<name>Read</name>
 			<value>true</value>
 		</right>
 	</object>
